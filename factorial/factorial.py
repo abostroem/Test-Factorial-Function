@@ -12,7 +12,7 @@ def factorial(n):
         raise AssertionError("n is not a number")
 
     # Then make sure it is a nonnegative integer
-    assert n%1 == 0, "not an integer"
+    assert isinstance(n, int), "not an integer"
     assert n>=0, 'int must be non-negative'
 
     # Now execute the algorithm for finding the factorial
